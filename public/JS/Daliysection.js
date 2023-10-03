@@ -13,13 +13,13 @@
             ) {
               // Data is available, update the counts and show the container
               document.getElementById(
-                "tea-count"
+                "daily-tea-count"
               ).textContent = `Tea Count: ${data.tea_count}`;
               document.getElementById(
-                "coffee-count"
+                "daily-coffee-count"
               ).textContent = `Coffee Count: ${data.coffee_count}`;
               document.getElementById(
-                "total-count"
+                "daily-total-count"
               ).textContent = `Total Beverage Count: ${data.total_count}`;
               document.querySelector(".container").style.display = "flex"; // Show the container
               document.getElementById("no-data-message").style.display = "none"; // Hide the message
@@ -37,19 +37,19 @@
       }
 
       function calculateDailyPrice() {
-        const teaPrice = parseFloat(document.getElementById("tea-price").value);
+        const teaPrice = parseFloat(document.getElementById("daily-tea-price").value);
         const coffeePrice = parseFloat(
-          document.getElementById("coffee-price").value
+          document.getElementById("daily-coffee-price").value
         );
 
         // Get the tea and coffee counts from the fetched data (similar to your existing logic)
         const teaCount =
           parseInt(
-            document.getElementById("tea-count").textContent.split(":")[1]
+            document.getElementById("daily-tea-count").textContent.split(":")[1]
           ) || 0;
         const coffeeCount =
           parseInt(
-            document.getElementById("coffee-count").textContent.split(":")[1]
+            document.getElementById("daily-coffee-count").textContent.split(":")[1]
           ) || 0;
 
         // Calculate the total beverage price
@@ -58,14 +58,14 @@
 
         // Display the total beverage price on the webpage
         document.getElementById(
-          "total-price"
+          "daily-total-price"
         ).textContent = `Total Beverage Price for Today: ₹${totalBeveragePrice.toFixed(
           2
         )}`;
       }
 
       document
-        .getElementById("calculate-button")
+        .getElementById("daily-calculate-button")
         .addEventListener("click", calculateDailyPrice);
 
       // Set the event listener for date changes
