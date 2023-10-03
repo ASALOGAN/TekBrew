@@ -230,38 +230,38 @@
           <!-- Display counts section -->
           <div id="counts-display">
             <h3>Tea and Coffee Counts for the Selected Day</h3>
-            <p id="tea-count">Tea Count: 0</p>
-            <p id="coffee-count">Coffee Count: 0</p>
-            <p id="total-count">Total Beverage Count: 0</p>
+            <p id="daily-tea-count">Tea Count: 0</p>
+            <p id="daily-coffee-count">Coffee Count: 0</p>
+            <p id="daily-total-count">Total Beverage Count: 0</p>
           </div>
           <!-- Price calculator section -->
           <div id="beverage-price-calculator" class="calculator-container">
             <div class="calculator-content">
               <h2 class="calculator-title">Daily Beverage Price Calculator</h2>
               <div class="input-group">
-                <label for="tea-price">Price per Tea:</label>
+                <label for="daily-tea-price">Price per Tea:</label>
                 <input
                   type="number"
-                  id="tea-price"
+                  id="daily-tea-price"
                   step="0.01"
                   placeholder="Enter price per tea"
                   class="price-input"
                 />
               </div>
               <div class="input-group">
-                <label for="coffee-price">Price per Coffee:</label>
+                <label for="daily-coffee-price">Price per Coffee:</label>
                 <input
                   type="number"
-                  id="coffee-price"
+                  id="daily-coffee-price"
                   step="0.01"
                   placeholder="Enter price per coffee"
                   class="price-input"
                 />
               </div>
-              <button id="calculate-button" class="calculate-button">
+              <button id="daily-calculate-button" class="calculate-button">
                 Calculate Total Price
               </button>
-              <p id="total-price" class="total-price"></p>
+              <p id="daily-total-price" class="total-price"></p>
             </div>
           </div>
         </div>
@@ -392,11 +392,11 @@
       </section>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="./JS/admin.js"></script>
     <script src="./JS/Usersection.js"></script>
     <script src="./JS/ICsection.js"></script>
     <script src="./JS/DOsection.js"></script>
     <script src="./JS/Daliysection.js"></script>
-    <script src="./JS/admin.js"></script>
     <script src="./JS/sidebar.js"></script>
   </body>
 </html>
