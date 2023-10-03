@@ -24,10 +24,10 @@ app.use(express.json());
 
 // Create a MySQL connection
 const dbConfig = {
-  host: "localhost",
-  user: "root",
-  password: "Ahmed@6363",
-  database: "tekbrew",
+  host: 'localhost',
+  user: 'username', // add your username
+  password: 'password', // add your password
+  database: 'database', // add your database
 };
 
 const connection = mysql.createConnection(dbConfig);
