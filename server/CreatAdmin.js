@@ -5,9 +5,9 @@ const fs = require('fs');
 // Create a MySQL connection
 const dbConfig = {
   host: 'localhost',
-  user: 'root',
-  password: 'Ahmed@6363',
-  database: 'tekbrew',
+  user: 'username', // add your username
+  password: 'password', // add your password
+  database: 'database', // add your database
 };
 
 // Read the JSON file
