@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./Image/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <title>TekBrew</title>
+  </head>
+  <body>
+    <section id="loading">
+      <div class="blue-circle bounce-in-top"></div>
+    </section>
+
+    <section id="login">
+      <div class="circle-container">
+        <div class="white-circle scale-in-center">
+          <div class="image-container">
+            <img
+              src="./Image/logo.png"
+              alt="Image Description"
+              class="image fade-in"
+            />
+          </div>
+          <div class="text-container">
+            <div class="tracking-in-contract">TekBrew</div>
+          </div>
+        </div>
+      </div>
+      <form id="login-form">
+        <input type="text" id="name" placeholder="Name" />
+        <!-- Suggestions will be displayed here -->
+        <div id="suggestions"></div>
+        <input type="password" id="passcode" placeholder="Passcode" />
+        <button id="login-button">Go</button>
+      </form>
+    </section>
+
+    <!-- Modify the selection section -->
+    <section id="selection">
+      <p id="welcome">Welcome, <span id="user-name"></span>!</p>
+      <p id="welcome1">Select your drink:</p>
+      <div class="drink-options">
+        <div class="drink-option" id="tea-option">
+          <img width="50" height="50" src="./Image/tea.png" alt="tea--v1" />
+        </div>
+        <div class="drink-option" id="coffee-option">
+          <img
+            width="50"
+            height="50"
+            src="./Image/coffe.png"
+            alt="Coffee"
+            class="drink-image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="confirmation">
+      <div id="confirmation-message" class="centered-div">
+        <div id="msg"></div>
+        <div id="quote"></div>
+        <div id="author"></div>
+      </div>
+    </section>
+
+    <!-- Add the modal element -->
+    <div id="confirmation-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="close-modal">&times;</span>
+        <p id="modal-text">
+          Are you sure you want to select <span id="selected-drink"></span>?
+        </p>
+        <button id="confirm-button">Confirm</button>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>You have already logged in today. Please try again tomorrow.</p>
+      </div>
+    </div>
+
+    <!-- Add this script to scroll to the top on page reload -->
+    <script>
+      window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+      };
+    </script>
+
+    <script src="./JS/scripts.js"></script>
+  </body>
+</html>

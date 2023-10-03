@@ -1,0 +1,246 @@
+/* Apply the provided styling */
+#users-section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+}
+
+/* Style the table */
+#user-table {
+    width: 70%;
+    /* Adjust width as needed */
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+#user-table th,
+#user-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+#user-table th {
+    background-color: #007bff;
+    color: white;
+}
+
+#user-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#user-table tr:hover {
+    background-color: #a0d8f1;
+}
+
+#user-table td {
+    color: #333;
+}
+
+/* Set appropriate column widths */
+#user-table th:first-child,
+#user-table td:first-child {
+    width: 50px;
+    /* Width for the "NO." column */
+}
+
+/* Form styling */
+#add-user-form {
+    width: auto;
+    /* Adjust width as needed */
+    height: 25%;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+#add-user-form h2 {
+    margin-top: 0;
+}
+
+#add-user-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#add-user-form input[type="text"],
+#add-user-form input[type="password"] {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#add-user-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#add-user-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Style for the "Delete" button */
+.delete-button {
+    background-color: #ff5757;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #e14141;
+}
+
+/* Style for the form container */
+#change-password-form {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    margin-left: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the heading */
+#change-password-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Style for the labels and inputs */
+#change-password-form label,
+#change-password-form input {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Style for the input fields */
+#change-password-form input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style for the button */
+#change-password-form button {
+    width: auto;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Change button color on hover */
+#change-password-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.close {
+    color: #888;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.add-change {
+    display: block;
+}
+
+/* The Password Change Modal (background) */
+.password-change-modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.password-change-modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* The Close Button */
+.password-change-modal-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.password-change-modal-close:hover,
+.password-change-modal-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#user-data {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}

@@ -1,0 +1,39 @@
+TekBrew/
+│
+├── public/
+│   ├── CSS/
+│   │   ├── admin.css
+│   │   ├── sidebar.css
+│   │   ├── DOsection.css
+│   │   ├── Dailysection.css
+│   │   ├── ICsection.css
+│   │   ├── Usersection.css
+│   │   └── styles.css
+│   │
+│   ├── Image/
+│   │   ├── coffee.png
+│   │   ├── tea.png
+│   │   ├── logo.png
+│   │   └── favicon.ico
+│   │
+│   ├── JS/
+│   │   ├── scripts.js
+│   │   ├── admin.js
+│   │   ├── sidebar.js
+│   │   ├── DOsection.js
+│   │   ├── Dailysection.js
+│   │   ├── ICsection.js
+│   │   └── Usersection.js
+│   │
+│   ├── index.html
+│   └── admin/
+│
+├── server/
+│   ├── admin.json
+│   ├── users.json
+│   ├── CreateAdmin.js
+│   ├── CreateTables.js
+│   └── insert_users.js
+│
+└── ProjectStructure.txt
+└── server.js

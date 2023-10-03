@@ -1,0 +1,148 @@
+            /* Styling for the daily-count-section (retaining existing styles) */
+            #daily-count-section {
+                background-color: #fff;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                margin: 20px;
+                padding: 20px;
+            }
+
+            /* Styling for the counts display (retaining existing styles) */
+            #counts-display {
+                margin-top: 20px;
+            }
+
+            /* Styling for the date input */
+            #day-selector {
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                font-size: 16px;
+            }
+
+            .container {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            /* Styling for the labels */
+            label {
+                font-size: 18px;
+                margin-right: 10px;
+            }
+
+            /* Styling for the h2 and h3 headers */
+            h2 {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+
+            h3 {
+                font-size: 20px;
+                margin-top: 20px;
+            }
+
+            /* Styling for the counts paragraphs */
+            p {
+                font-size: 18px;
+            }
+
+            /* Styling for the calculator container */
+            .calculator-container {
+                background-color: #fff;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                margin-top: 20px;
+            }
+
+            /* Styling for the calculator title */
+            .calculator-title {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+
+            /* Styling for the input groups */
+            .input-group {
+                margin-bottom: 15px;
+            }
+
+            /* Styling for labels */
+            label {
+                font-size: 18px;
+                margin-right: 10px;
+            }
+
+            /* Styling for the calculate button */
+            .calculate-button {
+                background-color: #007bff;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 18px;
+            }
+
+            /* Styling for the total price paragraph */
+            .total-price {
+                font-size: 18px;
+                margin-top: 10px;
+            }
+
+            /* Add a border and make it modern */
+            #counts-display {
+                border: 2px solid #f1f1f1;
+                border-radius: 5px;
+                padding: 20px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                background-color: #ffffff;
+                margin-bottom: 20px;
+            }
+
+            /* Add some modern styling to the paragraphs */
+            #counts-display p {
+                margin: 0;
+                padding: 5px 0;
+            }
+
+            /* Add some modern styling to the calculator */
+            .calculator-container {
+                border: 2px solid #f1f1f1;
+                border-radius: 5px;
+                padding: 20px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                background-color: #ffffff;
+            }
+
+            .calculator-title {
+                margin-bottom: 20px;
+            }
+
+            .price-input {
+                width: 80%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+            }
+
+            .total-price {
+                margin: 10px 0;
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+            /* Styling for the "No data available" message */
+            #no-data-message {
+                display: none;
+                /* Initially hide the message */
+                color: #ff0000;
+                /* Red text color */
+                font-size: x-large;
+                /* Font size */
+                font-style: italic;
+                font-weight: bolder;
+            }

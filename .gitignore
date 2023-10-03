@@ -1,0 +1,8 @@
+public/Image/coffee.png
+public/Image/tea.png
+public/Image/logo.png
+public/Image/favicon.ico
+node_modules/
+package-lock.json
+server/admin.json
+server/users.json

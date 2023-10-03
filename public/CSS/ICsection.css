@@ -1,0 +1,59 @@
+/* Styling for the Individual Count Section */
+        #individual-count-section {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+        }
+
+        /* Styling for the table */
+        .custom-table-IC {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .custom-table-IC th, .custom-table-IC td {
+            text-align: left;
+            padding: 12px 16px;
+        }
+
+        .custom-table-IC th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        .custom-table-IC td {
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* Styling for the date selector */
+        .custom-date-selector-IC {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        
+        /* Styling for the "No data" message */
+        .custom-no-data-message-IC {
+            font-size: 16px;
+            margin-top: 10px;
+            color: red;
+            font-size: x-large;
+            font-style: italic;
+            font-weight: bolder;
+        }
+
+        /* Styling for table rows */
+        .custom-table-IC tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }

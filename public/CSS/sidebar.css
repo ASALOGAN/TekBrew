@@ -1,0 +1,82 @@
+/* Sidebar Styles */
+
+.sidebar {
+  background-color: #24669A;
+  width: auto;
+  height: 100vh;
+  position: absolute;
+  top: 16%;
+  left: -250px;
+  /* Initially hidden */
+  transition: left 0.3s ease-in-out;
+  overflow-y: auto;
+}
+
+.sidebar.sidebar-open {
+  left: 0;
+  /* Displayed when open */
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  color: white;
+  font-size: 18px;
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.sidebar ul li:hover {
+  background-color: #1D4873;
+}
+
+/* Adjust main content to accommodate the sidebar */
+
+#admin-dashboard.sidebar-open {
+  margin-left: 250px;
+}
+
+/* Define a CSS class for highlighting */
+
+.active {
+  background-color: green;
+  /* Highlight color */
+  color: white;
+  /* Text color for highlighted option */
+}
+
+/* Flex container for icons and labels */
+
+.icon-label-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Container for icons */
+
+.icon-container {
+  margin-right: 10px;
+  /* Add some space between icon and label */
+}
+
+/* Styling for icons */
+
+.icon {
+  font-size: 24px;
+  color: white;
+}
+
+/* Container for labels */
+
+.label-container {
+  color: white;
+}
+
+.hidden-label {
+  display: none;
+}
+
