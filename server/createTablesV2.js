@@ -3,9 +3,9 @@ const mysql = require('mysql');
 // Create a MySQL connection
 const dbConfig = {
   host: 'localhost',
-  user: 'root',
-  password: 'Ahmed@6363',
-  database: 'tekbrew',
+  user: 'username', // add your username
+  password: 'password', // add your password
+  database: 'database', // add your database
 };
 
 const connection = mysql.createConnection(dbConfig);
